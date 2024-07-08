@@ -1,0 +1,291 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   
+}
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+}
+.enlaces{
+    list-style: none;
+}
+body{
+    background-color:#F2F5F9;
+
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.back{
+    padding: 32px 0;
+    background-color: #0783bd;
+}
+.menu{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+#logo{
+    font-size: 24px;
+    color:#F2F5F9;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color:#F2F5F9;
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color:#a1e5fa;
+    text-decoration: underline;
+    
+}
+#menu{
+    display: none;
+}
+.imagen-icono{
+    width: 40px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:991px){
+    .menu{
+        padding: 18px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 40px 0;
+    }
+    .menu .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right: 0;
+        background-color:#0783bd;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+/*seccion mundo digital*/
+.tamaño_imagen{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10%;
+}
+.seccion_mundo_digital{
+    position: relative;
+    top:10vw;
+}
+.parte_1{
+    display: flex;
+    justify-content: center;
+}
+.contenido_mundo_digital{
+    width: 40vw;
+    color:#383838;
+    margin-right: 5%;
+    text-align: justify;
+}
+.titulo_mundo_digital{
+    margin: 5%;
+    text-align: center;
+}
+@media screen and (max-width:600px){
+    .parte_1{
+        display: block;
+    }
+    .contenido_mundo_digital{
+        width: 100%;
+    }
+    .parte_2{
+        text-align: center;
+    }
+    .tamaño_imagen{
+        width: 60vw;
+        height: 60vw;
+    }
+}
+@media screen and (max-width:991px) and (min-width:601px){
+    .contenido_mundo_digital{
+        width: 60vw;
+    }
+    .seccion_mundo_digital{
+        position: relative;
+        top:20vw;
+    }
+}
+/*seccion footer*/
+footer{
+    margin-top: 5%;
+    background-color: #0783bd;
+    height: 25vw;
+    position: relative;
+    top:100px;
+}
+.descripcion{
+    color:#F2F5F9;
+    text-align: center;
+    width: 25vw;
+    font-size: 120%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#titulo_descripcion{
+    margin: 4%;
+}
+.contenido_footer{
+    display: flex;
+    justify-content: center;
+}
+.whatsap{
+    display: flex;
+    justify-content: center;
+    color:#F2F5F9;
+    margin-top: 3%;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    color:#F2F5F9;
+    margin-top: 3%;
+}
+#titulo_contact{
+    text-align: center;
+    color: #F2F5F9;
+    margin: 7%;
+}
+.contact{
+    font-size: 120%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}
+.texto_contac{
+    margin-left: 5%;
+}
+#titulo_redes{
+    text-align: center;
+    color: #F2F5F9;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.contenido_redes{
+    display: flex;
+    justify-content: center;
+}
+.tamaño_redes{
+    width: 2.5vw;
+    height: 2.5vw;
+
+}
+.d{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.redes_sociales{
+    font-size: 120%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.derechos_reservados{
+    display: flex;
+    justify-content: center;
+    color:#F2F5F9;
+    margin: 6%;
+}
+#correo{
+    color:#F2F5F9
+}
+@media screen and (max-width:600px){
+    footer{
+        position: relative;
+        top:100px;
+        height: auto;
+    }
+    .contenido_footer{
+        display: block;
+    }
+    .descripcion{
+        width: 100%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .tamaño_redes{
+        width: 10vw;
+        height: 10vw;
+    
+    }
+    .derechos_reservados{
+        margin: 0%;
+        margin-top: 6%;
+    }
+}
+@media screen and (max-width:991px) and (min-width:601px){
+    footer{
+        height: auto;
+        padding-bottom: 1%;
+        position: relative;
+        top:600px;
+    }
+    .descripcion{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40vw;
+        font-size: 90%;
+    }
+    .contact{
+        font-size: 100%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+       
+    }
+    .redes_sociales{
+        font-size: 100%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .tamaño_redes{
+        width: 4vw;
+        height: 4vw;
+    
+    }
+}
+@media screen and (max-width:1274px){
+    footer{
+        height: auto;
+        padding-bottom: 1%;
+    }
+}
