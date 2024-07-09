@@ -220,9 +220,6 @@ body{
 #imagen_introduccion{
     width: 30vw;
     height: 30vw;
-    position: relative;
-    left:10%;
-    top:7vw;
     border-radius: 50% 40% 10% 20%;
 }
 .informacion{
@@ -491,22 +488,18 @@ body{
     animation-iteration-count: infinite;
 }
 @media screen and (max-width: 600px) {
-    .seccion_introduccion {
-        display: flex;
-    }
     .informacion {
         width: 100%;
         height: auto;
     }.contenido_informacion{
         display: block;
-    
     }
     .contenido_imagen{
         text-align: center;
     }
     #imagen_introduccion {
-        width: 40vw;
-        height: 40vw;
+        width: 60vw;
+        height: 60vw;
     }
     .animacion{
         position: relative;
