@@ -485,12 +485,12 @@ body{
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-@media screen and (max-width:299px){
+@media screen and (max-width:319px){
     #imagen_introduccion{
         top:420px;
     }
 }
-@media screen and (max-width: 600px) and (min-width:300px){
+@media screen and (max-width: 600px) and (min-width:320px){
     .seccion_introduccion {
         display: flex;
     }
