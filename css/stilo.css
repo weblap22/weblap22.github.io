@@ -220,13 +220,18 @@ body{
 #imagen_introduccion{
     width: 30vw;
     height: 30vw;
+    position: relative;
+    left:10%;
+    top:7vw;
     border-radius: 50% 40% 10% 20%;
 }
 .informacion{
     width: 50%;
+    position: relative;
+    left: 45%;
+    bottom: 13vw;
     text-align: center;
     font-size: 120%;
-    margin: 5%;
 }
 #titulo_introduccion{
     margin: 2%;
@@ -235,13 +240,6 @@ body{
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
-}
-.contenido_informacion{
-    display: flex;
-    justify-content: center;
-}
-.contenedor_imagen{
-    margin: 5%;
 }
 #texto_introduccion{
     color:#383838
@@ -488,18 +486,19 @@ body{
     animation-iteration-count: infinite;
 }
 @media screen and (max-width: 600px) {
+    .seccion_introduccion {
+        display: flex;
+    }
     .informacion {
+        left: 0;
         width: 100%;
         height: auto;
-    }.contenido_informacion{
-        display: block;
-    }
-    .contenido_imagen{
-        text-align: center;
     }
     #imagen_introduccion {
-        width: 60vw;
-        height: 60vw;
+        top:390px;
+        width: 40vw;
+        height: 40vw;
+        left: 30%;
     }
     .animacion{
         position: relative;
