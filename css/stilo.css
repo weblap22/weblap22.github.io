@@ -485,7 +485,7 @@ body{
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-@media screen and (max-width:319px){
+@media screen and (max-width:329px){
     .seccion_introduccion {
         display: flex;
     }
@@ -495,7 +495,7 @@ body{
         height: auto;
     }
     #imagen_introduccion {
-        top:420px;
+        top:418px;
         width: 40vw;
         height: 40vw;
         left: 30%;
@@ -506,7 +506,7 @@ body{
     }
 
 }
-@media screen and (max-width: 600px) and (min-width:320px){
+@media screen and (max-width: 600px) and (min-width:330px){
     .seccion_introduccion {
         display: flex;
     }
